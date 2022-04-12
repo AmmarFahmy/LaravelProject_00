@@ -47,7 +47,7 @@ class ProductController extends Controller
         //create a new product
         Product::create($request->all());
 
-        //redirect the user and send friendly msg
+        //redirect the user and send friendly msg 
         return redirect()->route('products.index')->with('success', 'Product created successfully');
     }
 
