@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return "this is contact page";
 });
+
+Route::resource('products', ProductController::class);  
