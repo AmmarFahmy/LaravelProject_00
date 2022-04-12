@@ -18,12 +18,12 @@ use App\Http\Controllers\ProductController;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return "Hello, Home page";
-})->name('home.index');
+// Route::get('/', function () {
+//     return "Hello, Home page";
+// })->name('home.index');
 
-Route::get('/contact', function () {
-    return "this is contact page";
-});
+// Route::get('/contact', function () {
+//     return "this is contact page";
+// });
 
 Route::resource('products', ProductController::class);  
